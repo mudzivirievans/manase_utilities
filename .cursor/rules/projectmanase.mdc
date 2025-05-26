@@ -1,0 +1,40 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+This is a Next.js 13+ website for Manase Utilities — a Zimbabwe-based irrigation and solar company. The website must follow these conventions and features:
+
+### Structure
+- Use the App Router (`src/app`)
+- Pages: Home, About, Services, Products, Projects, Quote, Contact, Blog
+- Components: reusable UI in `/components/ui/`, page sections in `/components/sections/`
+- Layout: Global layout with `Navbar`, `Footer`, and shared metadata
+
+### Design & Styling
+- TailwindCSS for all styles
+- Framer Motion for animations
+- Use responsive, mobile-first layout
+- Hero image file: `/public/hero.jpg`
+- Use high-quality placeholder images if originals are not available
+
+### Features
+- Each page must be structured and readable
+- Start with Hero section → then continue page-by-page
+- Use animations for headings, CTAs, and section reveals
+- Use realistic sample data for now (e.g. testimonials, products)
+- Create quote form as a multi-step form later
+- Use `@/` as import alias for all internal paths
+
+### Code Conventions
+- Every component must be exportable and typed
+- All pages must be fully responsive
+- Use `src/lib/` for utility functions if needed
+- Never break layout structure by skipping sections
+
+### Agent Expectations
+- Always follow the user’s instructions strictly and fully
+- Do not leave tasks half done
+- Don’t ask for confirmation when user gives a command — just act
+- Assume “create,” “fix,” or “add” means you should write the code
+- Always update README.md in sync with new progress
