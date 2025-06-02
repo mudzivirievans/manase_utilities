@@ -16,7 +16,7 @@ export default function HeroSection() {
           className="object-cover object-[center_30%]"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/0 to-white/0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/0 to-black/50" />
       </div>
 
       {/* Glassmorphism Content Overlay, moved lower */}
@@ -26,14 +26,13 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="inline-block w-full max-w-3xl rounded-2xl px-8 py-10 mx-auto bg-white/30 backdrop-blur-xl border border-white/30 shadow-2xl"
-            style={{ boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)" }}
+            className="inline-block w-full max-w-3xl px-8 py-10 mx-auto"
           >
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="font-manrope text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl"
+              className="font-manrope text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl drop-shadow-lg"
             >
               Sustainable Irrigation for African Agriculture
             </motion.h1>
@@ -42,10 +41,9 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="mt-6 text-lg font-light text-white/90 sm:text-xl"
+              className="mt-4 text-lg font-light text-white/90 sm:text-xl max-w-2xl mx-auto drop-shadow-md"
             >
-              Empowering farmers with innovative technology for efficient water management
-              and renewable energy solutions across Zimbabwe.
+              Empowering farmers with innovative technology for efficient water management and renewable energy solutions across Zimbabwe.
             </motion.p>
 
             <motion.div
@@ -56,13 +54,13 @@ export default function HeroSection() {
             >
               <Link
                 href="/quote"
-                className="rounded-full bg-white/80 px-8 py-3 text-sm font-semibold text-primary shadow-lg transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 backdrop-blur"
+                className="rounded-full bg-white px-8 py-3 text-sm font-semibold text-agri-green shadow-lg transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-agri-green focus:ring-offset-2"
               >
                 Book a Free Site Assessment
               </Link>
               <Link
                 href="/services"
-                className="rounded-full bg-white/20 px-8 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+                className="rounded-full bg-agri-green px-8 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-agri-green/90 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
               >
                 Explore Our Services
               </Link>
