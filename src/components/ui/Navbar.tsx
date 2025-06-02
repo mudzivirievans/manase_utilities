@@ -23,7 +23,7 @@ export default function Navbar() {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="fixed top-0 left-0 w-full z-50"
     >
-      <nav className="mx-2 sm:mx-4 mt-4 flex max-w-7xl items-center justify-between rounded-2xl bg-white/30 px-4 sm:px-6 py-3 shadow-xl backdrop-blur-xl border border-white/30">
+      <nav className="mx-4 sm:mx-auto mt-4 flex max-w-7xl items-center justify-between rounded-2xl bg-white/30 px-4 sm:px-6 py-3 shadow-xl backdrop-blur-xl border border-white/30">
         {/* Brand Name Only */}
         <Link href="/" className="flex items-center gap-2 group select-none">
           <motion.span
